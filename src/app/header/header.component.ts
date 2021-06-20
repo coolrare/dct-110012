@@ -1,18 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 
   sitename = 'Hello World';
   subtitle = '記載著 <mark>Will</mark> 在網路世界的學習心得與技術分享';
 
   counter = 9;
 
-  constructor() {
+  constructor() { }
+
+  ngOnInit(): void {
     setTimeout(() => {
       this.sitename = '123123';
     }, 2000);

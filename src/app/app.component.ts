@@ -72,7 +72,6 @@ export class AppComponent {
     }
   ];
 
-
   doSearch(str: string) {
     this.keyword = str;
   }
