@@ -8,4 +8,8 @@ import { environment } from 'src/environments/environment';
 })
 export class AppComponent {
   keyword = 'demo1';
+
+  doSearch(str: string) {
+    this.keyword = str;
+  }
 }
