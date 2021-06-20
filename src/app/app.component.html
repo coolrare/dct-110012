@@ -9,7 +9,7 @@
       <div id="ctl00_cphBody_divError"></div>
       <div id="ctl00_cphBody_PostList1_posts" class="posts">
         <!-- Article START-->
-        <app-article *ngFor="let item of data; let i=index" [item]="item" [i]="i" (delete)="removeArticle($event)">
+        <app-article *ngFor="let item of (data$ | async); let i=index" [item]="item" [i]="i" (delete)="removeArticle($event)">
         </app-article>
         <!-- Article END-->
       </div>
