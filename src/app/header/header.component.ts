@@ -10,6 +10,8 @@ export class HeaderComponent {
   sitename = 'Hello World';
   subtitle = '記載著 <mark>Will</mark> 在網路世界的學習心得與技術分享';
 
+  counter = 9;
+
   constructor() {
     setTimeout(() => {
       this.sitename = '123123';
@@ -18,6 +20,7 @@ export class HeaderComponent {
 
   changeTitle(name: string, evt: MouseEvent) {
     console.log(evt);
+    this.counter++;
     if (evt.ctrlKey) {
       this.sitename = name;
     }
