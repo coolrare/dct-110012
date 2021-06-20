@@ -16,8 +16,11 @@ export class HeaderComponent {
     }, 2000);
   }
 
-  changeTitle(name: string) {
-    this.sitename = name;
+  changeTitle(name: string, evt: MouseEvent) {
+    console.log(evt);
+    if (evt.ctrlKey) {
+      this.sitename = name;
+    }
   }
 
 }
