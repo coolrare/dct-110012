@@ -10,6 +10,7 @@
       <span class="post-category"><i class="glyphicon glyphicon-folder-close"></i><a
            [href]="item['category-link']">{{item.category}}</a></span>
       <button type="button" (click)="doDelete()">刪除</button>
+      {{item.rating | stars:'👍' }}
     </div>
   </header>
   <section class="post-body text" [innerHTML]="item.summary">
