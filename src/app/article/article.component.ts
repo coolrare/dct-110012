@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class ArticleComponent {
 
   @Input() item: any = {};
-  @Input() i: number;
+  @Input() i: number = 0;
 
   @Output() delete = new EventEmitter<number>();
 
