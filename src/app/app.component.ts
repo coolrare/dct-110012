@@ -76,4 +76,8 @@ export class AppComponent {
   doSearch(str: string) {
     this.keyword = str;
   }
+
+  removeArticle(id: number) {
+    console.log('Deleting Post ' + id);
+  }
 }
