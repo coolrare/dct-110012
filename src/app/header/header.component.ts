@@ -7,6 +7,17 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  constructor() { }
+  sitename = 'Hello World';
+  subtitle = '記載著 <mark>Will</mark> 在網路世界的學習心得與技術分享';
+
+  constructor() {
+    setTimeout(() => {
+      this.sitename = '123123';
+    }, 2000);
+  }
+
+  changeTitle(name: string) {
+    this.sitename = name;
+  }
 
 }
